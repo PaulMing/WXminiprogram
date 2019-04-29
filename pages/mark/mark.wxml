@@ -1,0 +1,22 @@
+<!-- 马克页面 -->
+<view class="container">
+    <view class="user-container">
+        <view class="user-info">
+            <view class="user-name">{{userInfo.nickName}}</view>
+            <view class="user-avatar">
+                <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}"/>
+                <imgBtncmp open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">
+                    <image src="/images/mark/login.png" slot="img"/>
+                </imgBtncmp>
+            </view>
+        </view>
+        <view class="share">
+            <imgBtncmp open-type="share">
+                <image src="/images/mark/relay.png" slot="img"/>
+            </imgBtncmp>
+        </view>
+    </view>
+    <articleListcmp article-list="{{likeList}}" />
+
+    <imgBtncmp />
+</view>

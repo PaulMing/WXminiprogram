@@ -1,0 +1,11 @@
+<!-- 图文组件 -->
+
+<view class="container">
+    <view class="text-container">
+        <view class="main-title">{{mainTitle}}</view>
+        <view class="sub-head">{{subHead}}</view>
+    </view>
+    <view class="img-container">
+        <image class="image" src="{{imgSrc}}" />
+    </view>
+</view>

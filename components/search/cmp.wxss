@@ -1,0 +1,23 @@
+/* components/search/cmp.wxss */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700rpx;
+    margin: 0 auto;
+}
+
+.search {
+    display: inline-block;
+    width: 600rpx;
+    height: 80rpx;
+    padding-left: 20rpx;
+    background-color: #f3f3f3;
+    font-size: 28rpx;
+}
+
+.text {
+    font-size: 28rpx;
+    display: inline-block;
+}

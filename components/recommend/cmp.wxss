@@ -1,0 +1,69 @@
+/* components/recommend/cmp.wxss */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.big-title {
+    position: relative;
+    font-size: 52rpx;
+    padding-bottom: 24rpx;
+    letter-spacing: 10rpx;
+}
+
+.big-title::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -57rpx;
+    width: 114rpx;
+    height: 4rpx;
+    background-color: #999;
+    content: '';
+}
+
+.title {
+    width: 700rpx;
+    text-align: center;
+    margin-top: 24rpx;
+    font-size: 28rpx;
+}
+
+.image, .skeleton {
+    margin-top: 50rpx;
+    margin-bottom: 20rpx;
+    width: 700rpx;
+    height: 750rpx;
+}
+
+.skeleton {
+    position: relative;
+    background-color: rgba(0, 0, 0, .3)
+}
+
+/* 利用border巧妙制作loading图 */
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20rpx;
+    margin-left: -20rpx;
+    width: 40rpx;
+    height: 40rpx;
+    border: 10rpx solid #888;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: 1s loader linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

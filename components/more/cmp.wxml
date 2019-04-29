@@ -1,0 +1,5 @@
+<!-- 更多组件 -->
+
+<view class="container" catch:tap="onTap">
+    <image class="image" src="image/more.png"/>
+</view>

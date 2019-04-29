@@ -1,0 +1,13 @@
+<!--components/recommend/cmp.wxml-->
+<!-- <text>components/recommend/cmp.wxml</text> -->
+<view class="container" id="ceshi">
+    <text class="big-title">{{magazineId === 0 ? date : magazineTypeArr[magazineId]}}</text>
+    <text class="title">{{recommend.title}}</text>
+
+    <image class="image" src="{{recommend.imgSrc || '' }}" wx:if="{{recommend.imgSrc}}"/>
+
+    <view class="skeleton" hidden="{{recommend.imgSrc}}">
+        <view class="loader"></view>
+    </view>
+</view>
+

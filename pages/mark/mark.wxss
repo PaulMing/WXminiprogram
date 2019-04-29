@@ -1,0 +1,38 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    padding:  30rpx;
+    background-color: #fff;
+}
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50rpx;
+}
+.user-name {
+    font-size: 40rpx;
+}
+.user-avatar {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-avatar image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.share {
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.share image {
+    width: 50rpx;
+    height: 50rpx;
+}
+.get-user-info {
+    padding: 0;
+    border: 0;
+}

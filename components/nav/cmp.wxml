@@ -1,0 +1,21 @@
+<!--components/nav/cmp.wxml-->
+
+<scroll-view    class="container" 
+                scroll-x="{{true}}" 
+                scroll-into-view="{{activeId}}"
+                scroll-with-animation="true">
+    <!-- <text class="type active">轻芒</text>
+    <text class="type">兴趣</text>
+    <text class="type">物质</text>
+    <text class="type">世界</text>
+    <text class="type">新事</text>
+    <text class="type">灵魂</text> -->
+
+    <text wx:for="{{magazineTypeArr}}"
+          wx:key="*this"
+          class="type {{index === magazineIndex ? 'active' : ''}}"
+          bind:tap="onTap"
+          data-index="{{index}}"
+          id="{{'magazine' + index}}">{{item}}</text>
+          
+</scroll-view>

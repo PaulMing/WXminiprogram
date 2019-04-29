@@ -1,0 +1,27 @@
+<!-- 杂志主页面 -->
+<navcmp class="nav" catch:nav="onNav"/>
+
+<recommendcmp recommend="{{recommend}}" 
+              magazine-id="{{magazineId}}"
+              class="recommend"/>
+
+<tagListcmp markList="{{markList}}">
+      <!-- 自定义组件中使用插槽 -->
+      <addcmp slot="before" class="add" wx:if="{{magazineId === 0}}"/>
+      <view slot="after" class="to-catalog" catch:tap="onCatalog" wx:if="{{magazineId === 0}}">•••</view>
+</tagListcmp>
+
+<view class="loading-container" wx:if="{{loading}}">
+  <loadingcmp class="loading"/>
+</view>
+
+<articleListcmp articleList="{{articleList}}
+                more="{{getMore}}"
+                mmagazineId="{{magazineId}}"/>
+
+           
+
+
+
+
+

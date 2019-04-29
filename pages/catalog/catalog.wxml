@@ -1,0 +1,27 @@
+<!--目录页面 -->
+<view class="container">
+    <view class="searchcmp">
+      <searchcmp  value="{{searchWord}}"/>
+    </view>
+    <view class="mark-container">  
+        <view class="mark-control">
+            <view class="my-magazine">我的杂志</view>
+            <view class="manage-magazine">管理杂志</view>
+        </view>
+        <tagListcmp mark-list="{{myTagList}}">
+            <addcmp slot="before" style="margin-right: 20rpx;"/>
+        </tagListcmp>
+    </view>
+    <view >
+        <view class="tag-list-container" wx:for="{{tagInfoList}}" wx:for-item="tagListItem" wx:key="title">
+            <view >{{tagListItem.title}} ></view>
+            <view >
+                <view wx:for="{{tagListItem.tagList}}" class="tag" wx:key="tag">
+                    <text class="tag-text"># {{item.tag}}</text>
+                    <subscribecmp tag="{{item.tag}}" tag-id="{{item.tagId}}" catch:tap="onSubscribeTap"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

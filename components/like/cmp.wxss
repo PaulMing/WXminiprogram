@@ -1,0 +1,6 @@
+/* components/like/cmp.wxss */
+
+.image {
+    width: 50rpx;
+    height: 50rpx;
+}

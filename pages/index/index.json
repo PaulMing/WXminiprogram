@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "articleListcmp": "/components/articleList/cmp",
+    "navcmp": "/components/nav/cmp",
+    "recommendcmp": "/components/recommend/cmp",
+    "tagListcmp": "/components/tagList/cmp",
+    "addcmp": "/components/add/cmp",
+    "loadingcmp": "/components/loading/cmp"
+  },
+  "enablePullDownRefresh": true
+}

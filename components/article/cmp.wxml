@@ -1,0 +1,50 @@
+<!-- 文章组件 -->
+
+<view class="container">
+    <view class="mark-container">
+        <image class="avatar" src="{{articleDetail.mark.avatar}}" />
+        <text class="text">{{articleDetail.mark.people}}等{{articleDetail.mark.count}}人马克了</text>
+    </view>
+
+    <view >
+        <d-bigImg wx:if="{{articleDetail.type == 0}}"
+                  img-src="{{articleDetail.imgArray[0]}}"
+                  main-title="{{articleDetail.mainTitle}}"/>
+
+        <d-nineImg wx:elif="{{articleDetail.type === 1}}"
+                   img-arr="{{articleDetail.imgArray}}"
+                   main-title="{{articleDetail.mainTitle}}"/>
+
+        <d-imgText wx:elif="{{articleDetail.type === 2}}"
+                   main-title="{{articleDetail.mainTitle}}"
+                   sub-head="{{articleDetail.subHead}}"
+                   img-src="{{articleDetail.imgArray[0]}}"/>
+
+        <d-video wx:elif="{{articleDetail.type === 3}}"
+                 main-title="{{articleDetail.mainTitle}}"
+                 src="{{articleDetail.video.src}}"
+                 duration="{{articleDetail.video.duration}}"
+                 poster="{{articleDetail.video.poster}}"
+                 video-id="{{articleDetail.videoId}}"/>
+
+        <d-pureText wx:else
+                    main-title="{{articleDetail.mainTitle}}"
+                    sub-head="{{articleDetail.subHead}}"/>
+        
+    </view>
+
+    <view class="control-container">
+        <view >
+            <d-tag tag="{{articleDetail.tag}}" tag-id="{{articleDetail.tagId}}"/>
+        </view>
+        <view class="control-box">
+            <d-more class="box" tag="{{articleDetail.tag}}"/>
+            <d-imgBtn open-type="share" class="box img-btn">
+                <image src="/images/mark/relay.png" slot="img"/>
+            </d-imgBtn>
+            <d-like class="box" like="{{likeStatus}}" catch:like="onLike"/>
+        </view>
+
+    </view>
+
+</view>

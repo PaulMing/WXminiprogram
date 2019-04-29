@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/type/type",
+    "pages/catalog/catalog",
+    "pages/mark/mark",
+    "pages/search/search",
+    "pages/articleDetail/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "轻芒杂志",
+    "nabigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/catalog/catalog",
+        "text": "目录",
+        "iconPath": "images/tab/catalog_selected.png",
+        "selectedIconPath": "images/tab/catalog.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "杂志",
+        "iconPath": "images/tab/index_selected.png",
+        "selectedIconPath": "images/tab/index.png"
+      },
+      {
+        "pagePath": "pages/mark/mark",
+        "text": "马克",
+        "iconPath": "images/tab/mark_selected.png",
+        "selectedIconPath": "images/tab/mark.png"
+      }
+    ]
+  }
+}

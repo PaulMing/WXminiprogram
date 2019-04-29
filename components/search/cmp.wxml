@@ -1,0 +1,11 @@
+
+
+<view class="container">
+    <input  class="search" type="text" placeholder="轻芒什么都有" 
+            value="{{value}}"
+            bindconfirm="onSearch"
+            bindblur="onBlur"/>
+    <text class="text" bind:tap="onSearch" word="{{searchWord}}">搜索</text>
+
+</view>
+

@@ -1,0 +1,32 @@
+
+.searchcmp{
+  padding: 30rpx;
+}
+.mark-container {
+    width: 700rpx;
+    margin: 0 auto;
+}
+.mark-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 40rpx 0;
+}
+.my-magazine {
+    font-size: 40rpx;
+}
+.manage-magazine {
+    font-size: 30rpx;
+}
+.tag-list-container {
+    width: 700rpx;
+    margin: 50rpx auto 0;
+}
+.tag {
+    display: flex;
+    justify-content: space-between;
+    margin: 30rpx 0;
+}
+.tag-text {
+    font-size: 28rpx;
+}

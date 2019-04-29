@@ -1,0 +1,40 @@
+.loader-container {
+    position: fixed;
+    width: 750rpx;
+    height: 1054rpx;
+    background-color: #fff;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30rpx;
+    margin-top: -30rpx;
+}
+
+.recommend-container {
+    width: 700rpx;
+    margin: 70rpx auto;
+    padding-top: 70rpx;
+    padding-bottom: 70rpx;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.word {
+    font-size: 50rpx;
+    margin-bottom: 50rpx;
+}
+.recommend-list {
+    font-size: 24rpx;
+}
+.recommend {
+    margin-top: 10rpx;
+}
+.subscribe {
+    display: block;
+    margin-top: 50rpx;
+}
+.article-container {
+    padding-top: 30rpx;
+    background-color: rgba(0, 0, 0, .1)
+}

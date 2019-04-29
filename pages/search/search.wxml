@@ -1,0 +1,14 @@
+<!-- 搜索页面 -->
+<view class="container">
+    <searchcmp value="{{searchWord}}"/>
+    <view class="loader-container" wx:if="{{searching}}">
+        <loadingcmp class="loader"/>
+    </view>
+    <view class="recommend-container">
+        <view class="text">#{{tag}}></view>
+        <view class="recommend-list">
+            <view class="recommend" wx:for="{{recommend}}" wx:key="*this">{{item}}</view>
+        </view>
+    </view>
+    <articleListcmp article-list="{{articleList}}"  more="{{more}}" word="{{searchWord}}"/>
+</view>

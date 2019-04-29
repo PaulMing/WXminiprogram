@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "articleListcmp": "/components/articleList/cmp",
+    "imgBtncmp": "/components/imgBtn/cmp"
+  },
+  "enablePullDownRefresh": true
+}
